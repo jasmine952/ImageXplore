@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Landing Page -->
+  <section class="landing" id="landing">
+    <div class="overlay">
+      <h1>Image Explorer</h1>
+      <p>Discover stunning visuals from every category you love</p>
+      <button id="startBtn">Click Here to Get Started</button>
+    </div>
+  </section>
+
+  <!-- Categories Page -->
+  <section class="categories" id="categories">
+    <h2>Choose a Category</h2>
+    <div class="category-list">
+      <div class="category-card" data-category="wildlife">🐅 Wildlife</div>
+      <div class="category-card" data-category="celebrities">🌟 Celebrities</div>
+      <div class="category-card" data-category="movies">🎬 Movie Moments</div>
+      <div class="category-card" data-category="memes">😂 Memes / Comedy</div>
+      <div class="category-card" data-category="fashion">👗 Fashion</div>
+      <div class="category-card" data-category="cars">🚗 Cars</div>
+      <div class="category-card" data-category="buildings">🏙️ Buildings</div>
+    </div>
+  </section>
+
+  <!-- Gallery Page -->
+  <section class="gallery" id="gallery">
+    <h2 id="galleryTitle"></h2>
+    <div class="image-grid" id="imageGrid"></div>
+    <button class="back-btn" id="backBtn">← Back to Categories</button>
+  </section>
+
+  <!-- Modal for images -->
+  <div id="modal" class="modal hidden">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+    <div id="caption"></div>
+    <button id="prevBtn" class="modal-nav">❮</button>
+    <button id="nextBtn" class="modal-nav">❯</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
